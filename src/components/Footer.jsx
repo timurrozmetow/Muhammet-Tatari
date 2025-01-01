@@ -14,7 +14,7 @@ const Footer = () => {
       <div className="footer-container">
         <div className="footer-logo">
           <img src="logo/q.webp" alt="Logo" className="footer-img-logo" />
-          <p className="footer-tagline">MTI International</p>
+          <p className="footer-tagline">MT International</p>
         </div>
 
         <div className="footer-contact">
@@ -22,7 +22,7 @@ const Footer = () => {
           <ul>
             <li>
               <a href="mailto:Mmtatari17@gmail.com" className="footer-icon-link">
-                Mmtatari17@gmail.com
+                Mtatari17@gmail.com
               </a>
             </li>
             <li>

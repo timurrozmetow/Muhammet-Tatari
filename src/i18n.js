@@ -12,7 +12,7 @@ const resources = {
       d2:"Ideas that change the future",
       d3:"Your success is our mission",
       aboutGen:"About us",
-      about1:"At MTI International, we excel in sourcing and delivering the products your business needs to thrive. With a global network of trusted partners and deep industry expertise, we provide tailored solutions that ensure seamless and reliable operations, every step of the way.",
+      about1:"At MT International, we excel in sourcing and delivering the products your business needs to thrive. With a global network of trusted partners and deep industry expertise, we provide tailored solutions that ensure seamless and reliable operations, every step of the way.",
       about2:`Fluent communication in Turkish, Turkmen, English, Russian, and
       Farsi ensures smooth collaboration across borders.`,
       about3:`Years of experience: Trusted by clients worldwide to deliver
@@ -20,7 +20,7 @@ const resources = {
       about4:`Industries served: Our expertise spans multiple sectors, including
       manufacturing, construction, and more.`,
       aboutTitle: "About Us",
-      aboutDescription1: "MTI International excels in sourcing and delivering products tailored to your business needs.",
+      aboutDescription1: "MT International excels in sourcing and delivering products tailored to your business needs.",
       aboutDescription2: "From high-quality metal structures to diverse business solutions, we ensure seamless operations.",
       aboutDescription3: "Partner with us to unlock exceptional opportunities and reliable services.",
       sandwichPanelsTitle: "Perfect Solution for Construction and Insulation",
@@ -74,7 +74,7 @@ const resources = {
       Contact4:"Send",
       Certificates:"Certificates",
       Railway:"Railway Wagons",
-      name:"MTI International",
+      name:"MT International",
       certificates: "Certificates",
       contact: "Contact",
       cert:"Our Certificates",
@@ -93,7 +93,7 @@ const resources = {
         Email: "Email",
         Address: "Address",
         add: "Iran golestan velayat gonbad kavous Shahrak sanati gonbad, Standard",
-        res:"2025 MTI International. All rights reserved.",
+        res:"2025 MT International. All rights reserved.",
 
     },
   },
@@ -107,12 +107,12 @@ const resources = {
       d2: "Geleceği değiştiren fikirler",
       d3: "Başarınız bizim misyonumuz",
       aboutGen: "Hakkımızda",
-      about1: "MTI International olarak, işinizin gelişmesi için ihtiyaç duyduğu ürünleri tedarik etme ve sunmada uzmanız. Güvenilir küresel ortak ağı ve derin endüstri uzmanlığımızla, kesintisiz ve güvenilir operasyonları her adımda sağlamak için özel çözümler sunuyoruz.",
+      about1: "MT International olarak, işinizin gelişmesi için ihtiyaç duyduğu ürünleri tedarik etme ve sunmada uzmanız. Güvenilir küresel ortak ağı ve derin endüstri uzmanlığımızla, kesintisiz ve güvenilir operasyonları her adımda sağlamak için özel çözümler sunuyoruz.",
       about2: "Türkçe, Türkmence, İngilizce, Rusça ve Farsça akıcı iletişim, sınır ötesi işbirliklerini kolaylaştırır.",
       about3: "Yılların deneyimi: Müşterilerimize dünya çapında uygun maliyetli ve güvenilir çözümler sunuyoruz.",
       about4: "Hizmet verdiğimiz sektörler: Üretim, inşaat ve daha fazlasını kapsayan uzmanlık.",
       aboutTitle: "Hakkımızda",
-      aboutDescription1: "MTI International, iş ihtiyaçlarınıza uygun ürünleri tedarik etme ve sunmada uzmandır.",
+      aboutDescription1: "MT International, iş ihtiyaçlarınıza uygun ürünleri tedarik etme ve sunmada uzmandır.",
       aboutDescription2: "Yüksek kaliteli metal yapılardan çeşitli iş çözümlerine kadar, kesintisiz operasyonlar sağlıyoruz.",
       aboutDescription3: "Olağanüstü fırsatlar ve güvenilir hizmetler için bizimle çalışın.",
       sandwichPanelsTitle: "İnşaat ve Yalıtım için Mükemmel Çözüm",
@@ -166,7 +166,7 @@ const resources = {
       Contact4: "Gönder",
       Certificates: "Sertifikalar",
       Railway: "Demiryolu Vagonları",
-      name: "MTI International",
+      name: "MT International",
       certificates: "Sertifikalar",
       contact: "İletişim",
       cert: "Sertifikalarımız",
@@ -185,7 +185,7 @@ const resources = {
       Email: "E-posta",
       Address: "Adres",
       add: "İran, Golestan Eyaleti, Gonbad Kavous, Gonbad Sanayi Bölgesi, Standard",
-      res: "2025 MTI International. Tüm hakları saklıdır."
+      res: "2025 MT International. Tüm hakları saklıdır."
     }
   },
   
@@ -199,12 +199,12 @@ const resources = {
       d2: "Gelejegi üýtgedýän pikirler",
       d3: "Siziň üstünligiňiz biziň maksadymyz",
       aboutGen: "Biz barada",
-      about1: "MTI International kompaniýasynda, işiňiziň ösmegi üçin zerur önümleri üpjün etmekde we gowşurmakda ussat. Biziň global ynamdar hyzmatdaşlar torumyz we çuňňur senagat tejribämiz bilen her ädimde üznüksiz we ygtybarly amallary üpjün edýän özboluşly çözgütler hödürleýäris.",
+      about1: "MT International kompaniýasynda, işiňiziň ösmegi üçin zerur önümleri üpjün etmekde we gowşurmakda ussat. Biziň global ynamdar hyzmatdaşlar torumyz we çuňňur senagat tejribämiz bilen her ädimde üznüksiz we ygtybarly amallary üpjün edýän özboluşly çözgütler hödürleýäris.",
       about2: "Türkçe, türkmençe, iňlisçe, rusça we parsça aragatnaşyk, serhetleriň aňyrsynda işbirliklerini aňsatlaşdyrýar.",
       about3: "Köpgatly tejribe: Dünýäniň dört künjegindäki müşderilere amatly we ygtybarly çözgütleri hödürleýäris.",
       about4: "Hyzmat edýän pudaklarymyz: Öndürijilik, gurluşyk we başga-da köp sanly ugurlar boýunça tejribe.",
       aboutTitle: "Biz barada",
-      aboutDescription1: "MTI International, işiňiziň zerurlyklaryna laýyk önümleri üpjün etmekde ussat.",
+      aboutDescription1: "MT International, işiňiziň zerurlyklaryna laýyk önümleri üpjün etmekde ussat.",
       aboutDescription2: "Ýokary hilli metal gurluşlardan iş çözgütlerine çenli, biz üznüksiz amal hödürleýäris.",
       aboutDescription3: "Adatdan daşary mümkinçilikler we ygtybarly hyzmatlar üçin biziň bilen işleşiň.",
       sandwichPanelsTitle: "Gurluşyk we Ýylatma üçin Ajaýyp Çözgüt",
@@ -258,7 +258,7 @@ const resources = {
       Contact4: "Ugrat",
       Certificates: "Sertifikatlar",
       Railway: "Demir ýol wagonlary",
-      name: "MTI International",
+      name: "MT International",
       certificates: "Sertifikatlar",
       contact: "Habarlaşmak",
       cert: "Sertifikatlarymyz",
@@ -277,7 +277,7 @@ const resources = {
       Email: "E-poçta",
       Address: "Salgy",
       add: "Eýran, Golestan welaýaty, Gonbad şäheriniň Senagat Zolaklary",
-      res: "2025 MTI International. Ähli hukuklary goralan."
+      res: "2025 MT International. Ähli hukuklary goralan."
     }
   },  
 
@@ -290,12 +290,12 @@ const resources = {
       d2: "ایده‌هایی که آینده را تغییر می‌دهند",
       d3: "موفقیت شما، مأموریت ماست",
       aboutGen: "درباره ما",
-      about1: "در MTI International، ما در تأمین و تحویل محصولاتی که کسب‌وکار شما برای رشد نیاز دارد، تخصص داریم. با شبکه جهانی از شرکای معتبر و تجربه عمیق صنعتی، راه‌حل‌های ویژه‌ای ارائه می‌دهیم که عملیات روان و مطمئن را در هر مرحله تضمین می‌کند.",
+      about1: "در MT International، ما در تأمین و تحویل محصولاتی که کسب‌وکار شما برای رشد نیاز دارد، تخصص داریم. با شبکه جهانی از شرکای معتبر و تجربه عمیق صنعتی، راه‌حل‌های ویژه‌ای ارائه می‌دهیم که عملیات روان و مطمئن را در هر مرحله تضمین می‌کند.",
       about2: "ارتباط روان به زبان‌های ترکی، ترکمنی، انگلیسی، روسی و فارسی همکاری فرامرزی را تسهیل می‌کند.",
       about3: "سال‌ها تجربه: توسط مشتریان جهانی برای ارائه راه‌حل‌های اقتصادی و مطمئن اعتماد شده است.",
       about4: "صنایع خدماتی: تخصص ما شامل بخش‌های مختلفی مانند تولید، ساخت‌وساز و بیشتر است.",
       aboutTitle: "درباره ما",
-      aboutDescription1: "MTI International در تأمین و تحویل محصولاتی که به نیازهای کسب‌وکار شما متناسب است، برتری دارد.",
+      aboutDescription1: "MT International در تأمین و تحویل محصولاتی که به نیازهای کسب‌وکار شما متناسب است، برتری دارد.",
       aboutDescription2: "از ساختارهای فلزی با کیفیت بالا تا راه‌حل‌های متنوع تجاری، ما عملیات روان را تضمین می‌کنیم.",
       aboutDescription3: "برای دسترسی به فرصت‌های استثنایی و خدمات مطمئن، با ما همکاری کنید.",
       sandwichPanelsTitle: "راه‌حل عالی برای ساخت‌وساز و عایق‌بندی",
@@ -349,7 +349,7 @@ const resources = {
       Contact4: "ارسال",
       Certificates: "گواهی‌نامه‌ها",
       Railway: "واگن‌های راه‌آهن",
-      name: "MTI International",
+      name: "MT International",
       certificates: "گواهی‌نامه‌ها",
       contact: "تماس",
       cert: "گواهی‌نامه‌های ما",
@@ -368,7 +368,7 @@ const resources = {
       Email: "ایمیل",
       Address: "نشانی",
       add: "ایران، استان گلستان، گنبد کاووس، شهرک صنعتی گنبد، استاندارد",
-      res: "۲۰۲۵ MTI International. تمام حقوق محفوظ است."
+      res: "۲۰۲۵ MT International. تمام حقوق محفوظ است."
     }
   },  
   ru: {
@@ -380,12 +380,12 @@ const resources = {
       d2: "Идеи, меняющие будущее",
       d3: "Ваш успех — наша миссия",
       aboutGen: "О нас",
-      about1: "В MTI International мы превосходим в подборе и доставке товаров, необходимых вашему бизнесу для процветания. Благодаря глобальной сети надежных партнеров и глубокому отраслевому опыту мы предоставляем индивидуальные решения, которые обеспечивают бесперебойные и надежные операции на каждом этапе.",
+      about1: "В MT International мы превосходим в подборе и доставке товаров, необходимых вашему бизнесу для процветания. Благодаря глобальной сети надежных партнеров и глубокому отраслевому опыту мы предоставляем индивидуальные решения, которые обеспечивают бесперебойные и надежные операции на каждом этапе.",
       about2: "Свободное владение турецким, туркменским, английским, русским и фарси обеспечивает плавное сотрудничество за границей.",
       about3: "Годы опыта: Нам доверяют клиенты по всему миру за предоставление экономически эффективных и надежных решений.",
       about4: "Обслуживаемые отрасли: Наш опыт охватывает множество секторов, включая производство, строительство и многое другое.",
       aboutTitle: "О нас",
-      aboutDescription1: "MTI International специализируется на подборе и доставке продукции, соответствующей вашим бизнес-потребностям.",
+      aboutDescription1: "MT International специализируется на подборе и доставке продукции, соответствующей вашим бизнес-потребностям.",
       aboutDescription2: "От высококачественных металлических конструкций до разнообразных бизнес-решений, мы обеспечиваем бесперебойные операции.",
       aboutDescription3: "Сотрудничайте с нами, чтобы получить доступ к исключительным возможностям и надежным услугам.",
       sandwichPanelsTitle: "Идеальное решение для строительства и изоляции",
@@ -439,7 +439,7 @@ const resources = {
       Contact4: "Отправить",
       Certificates: "Сертификаты",
       Railway: "Железнодорожные вагоны",
-      name: "MTI International",
+      name: "MT International",
       certificates: "Сертификаты",
       contact: "Контакты",
       cert: "Наши сертификаты",
@@ -458,7 +458,7 @@ const resources = {
       Email: "Электронная почта",
       Address: "Адрес",
       add: "Иран, провинция Голестан, Гонбад-Кавус, промышленный городок Гонбад, Стандарт",
-      res: "2025 MTI International. Все права защищены."
+      res: "2025 MT International. Все права защищены."
     }
   }  
 };

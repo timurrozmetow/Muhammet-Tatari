@@ -65,7 +65,7 @@ const HomeCarousel = () => {
         transition={{ duration: 0.5 }}
       >
         <p className="dobro">{t("dobro")}</p>
-        <h1>MTI International</h1>
+        <h1>MT International</h1>
         <p className={`changing-text ${fadeOut ? "fade-out" : "fade-in"}`}>
           {words[currentWord]}
         </p>
