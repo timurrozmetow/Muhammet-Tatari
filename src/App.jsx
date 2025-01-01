@@ -15,6 +15,7 @@ import SliderWithText22 from "./components/SliderWithText22";
 import SliderWithText1111 from "./components/SliderWithText1111";
 import ContactForm from "./components/ContactForm";
 import SliderWithText222 from "./components/SliderWithText222";
+import IranProductsPage from "./components/IranProductsPage";
 
 
 
@@ -46,6 +47,7 @@ function App() {
       <section id="contact">
       <ContactForm />
       </section>
+      <IranProductsPage />
       <Footer />
     </>
   );

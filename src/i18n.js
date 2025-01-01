@@ -94,6 +94,17 @@ const resources = {
         Address: "Address",
         add: "Iran golestan velayat gonbad kavous Shahrak sanati gonbad, Standard",
         res:"2025 MT International. All rights reserved.",
+      "ir1": "Your reliable partner for goods from Iran",
+      "ir2": "Regardless of your needs, whether industrial materials, agricultural products, food, or rare handmade items, we can provide fast and competitively priced delivery.",
+      "ir3": "Ready to place an order?",
+      "ir4": "Contact us, and we will provide detailed information, help you place an order, and organize delivery.",
+      "ir5": "Contact us",
+      "ir6": "High-quality goods",
+      "ir7": "From premium saffron and pistachios to industrial materials, we offer only the best from Iran.",
+      "ir8": "Custom orders",
+      "ir9": "Need a rare product? We are ready to find and deliver it for you. A personalized approach is guaranteed.",
+      "ir10": "Global logistics",
+      "ir11": "Fast delivery to any part of the world. We work to ensure your orders arrive on time."
 
     },
   },
@@ -185,7 +196,18 @@ const resources = {
       Email: "E-posta",
       Address: "Adres",
       add: "İran, Golestan Eyaleti, Gonbad Kavous, Gonbad Sanayi Bölgesi, Standard",
-      res: "2025 MT International. Tüm hakları saklıdır."
+      res: "2025 MT International. Tüm hakları saklıdır.",
+      "ir1": "İran'dan ürünler için güvenilir ortağınız",
+  "ir2": "İster endüstriyel malzemeler, ister tarım ürünleri, gıda veya nadir el yapımı ürünler olsun, ihtiyaçlarınızı hızlı ve rekabetçi fiyatlarla karşılayabiliriz.",
+  "ir3": "Sipariş vermeye hazır mısınız?",
+  "ir4": "Bizimle iletişime geçin, size detaylı bilgi sağlayalım, siparişinizi vermenize yardımcı olalım ve teslimatı organize edelim.",
+  "ir5": "Bize ulaşın",
+  "ir6": "Yüksek kaliteli ürünler",
+  "ir7": "Premium safran ve Antep fıstığından endüstriyel malzemelere kadar, yalnızca İran'ın en iyilerini sunuyoruz.",
+  "ir8": "Özel siparişler",
+  "ir9": "Nadir bir ürün mü gerekiyor? Onu bulup size teslim etmeye hazırız. Kişiselleştirilmiş bir yaklaşım garantilidir.",
+  "ir10": "Küresel lojistik",
+  "ir11": "Dünyanın herhangi bir yerine hızlı teslimat. Siparişlerinizin zamanında ulaşmasını sağlamak için çalışıyoruz."
     }
   },
   
@@ -277,7 +299,18 @@ const resources = {
       Email: "E-poçta",
       Address: "Salgy",
       add: "Eýran, Golestan welaýaty, Gonbad şäheriniň Senagat Zolaklary",
-      res: "2025 MT International. Ähli hukuklary goralan."
+      res: "2025 MT International. Ähli hukuklary goralan.",
+      "ir1": "Eýranyň harytlary üçin ygtybarly hyzmatdaş",
+  "ir2": "Senagat materiallary, oba hojalyk önümleri, iýmit ýa-da seýrek elde ýasalan zatlar bolsun, biz islendik talapyňyzy çalt we amatly bahadan üpjün edip bileris.",
+  "ir3": "Sargyt etmäge taýynmy?",
+  "ir4": "Biz bilen habarlaşyň, size giňişleýin maglumat bereris, sargydyňyzy düzmäge kömek ederis we eltip bermek işini gurarys.",
+  "ir5": "Biz bilen habarlaşyň",
+  "ir6": "Hil taýdan ýokary harytlar",
+  "ir7": "Premium derejeli safran we pistadan senagat materiallaryna çenli, biz diňe iň gowularyny hödürleýäris.",
+  "ir8": "Custorder sargytlar",
+  "ir9": "Seýrek haryt gerekmi? Biz ony tapyp, size eltmäge taýyn. Şahsyýetli çemeleşme kepillendirilýär.",
+  "ir10": "Global logistik",
+  "ir11": "Dünýäniň islendik künjegine çalt eltip bermek. Sargytlaryňyzyň wagtynda gelmegini üpjün etmek üçin iş edýäris."
     }
   },  
 
@@ -368,7 +401,18 @@ const resources = {
       Email: "ایمیل",
       Address: "نشانی",
       add: "ایران، استان گلستان، گنبد کاووس، شهرک صنعتی گنبد، استاندارد",
-      res: "۲۰۲۵ MT International. تمام حقوق محفوظ است."
+      res: "۲۰۲۵ MT International. تمام حقوق محفوظ است.",
+      "ir1": "شریک قابل اعتماد شما برای کالاهای ایران",
+  "ir2": "چه مواد صنعتی، محصولات کشاورزی، مواد غذایی یا محصولات دست‌ساز نادر، نیازهای شما را با سرعت و قیمت رقابتی تأمین می‌کنیم.",
+  "ir3": "آماده سفارش دادن هستید؟",
+  "ir4": "با ما تماس بگیرید تا اطلاعات دقیق را در اختیار شما قرار دهیم، به شما در ثبت سفارش کمک کنیم و تحویل را سازماندهی کنیم.",
+  "ir5": "با ما تماس بگیرید",
+  "ir6": "محصولات با کیفیت بالا",
+  "ir7": "از زعفران و پسته ممتاز تا مواد صنعتی، فقط بهترین‌های ایران را ارائه می‌دهیم.",
+  "ir8": "سفارش‌های سفارشی",
+  "ir9": "نیاز به یک محصول نادر دارید؟ ما آماده‌ایم آن را پیدا کرده و به شما تحویل دهیم. رویکردی شخصی تضمین شده است.",
+  "ir10": "لجستیک جهانی",
+  "ir11": "تحویل سریع به هر نقطه از جهان. ما کار می‌کنیم تا سفارش‌های شما به موقع تحویل داده شوند."
     }
   },  
   ru: {
@@ -458,7 +502,25 @@ const resources = {
       Email: "Электронная почта",
       Address: "Адрес",
       add: "Иран, провинция Голестан, Гонбад-Кавус, промышленный городок Гонбад, Стандарт",
-      res: "2025 MT International. Все права защищены."
+      res: "2025 MT International. Все права защищены.",
+      ir1 : `Ваш надежный партнер по товарам из Ирана`,
+      ir2 : `Независимо от ваших потребностей, будь то промышленные материалы,
+                сельскохозяйственные товары, продукты питания или редкие изделия
+                ручной работы, мы можем обеспечить их поставку быстро и по выгодным
+                ценам.`,
+      ir3: `Готовы оформить заказ?`,
+      ir4: `Свяжитесь с нами, и мы предоставим вам подробную информацию,
+                поможем оформить заказ и организуем доставку.`,
+      ir5: `Связаться с нами`,
+      ir6: `Товары высокого качества`,
+      ir7: `От первоклассного шафрана и фисташек до промышленных материалов.
+                  Мы предлагаем только лучшее из Ирана.`,
+      ir8: `Индивидуальные заказы`,
+      ir9: `Нужен редкий продукт? Мы готовы найти и доставить его для вас.
+                  Индивидуальный подход гарантирован.`,
+      ir10: `Глобальная логистика`,
+      ir11: `Быстрая доставка в любую точку мира. Мы работаем, чтобы ваши
+                  заказы прибыли вовремя.`,
     }
   }  
 };
