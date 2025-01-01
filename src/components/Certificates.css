@@ -1,68 +1,50 @@
+.certificates-container {
+  padding: 4% 5%;
+  text-align: center;
+}
 
-  
-  .certificates-title {
-    font-size: 2.5rem;
-    color: #03183f;
-    margin-bottom: 20px;
-    font-weight: 400;
-  }
-  
-  .certificate-card {
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    padding: 10px;
-    width: 30%;
-  }
-  
-  .certificate-card img {
-    width: 50%;
-    height: auto;
-    margin: 0 auto;
-    border-bottom: 1px solid #e0e0e0;
-  }
-  
-  .certificate-title {
-    font-size: 1.2rem;
-    color: #03183f;
-    margin: 10px 0;
-  }
-  
-  .slick-prev:before,
-  .slick-next:before {
-    color: #03183f;
-  }
-  
-  .slick-dots li button:before {
-    color: #03183f;
-  }
-  
-  @media (max-width: 768px) {
-    .certificates-title {
-      font-size: 1.5rem;
-    }
-  
-    .certificate-title {
-      font-size: 1rem;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .certificates-container {
-      padding: 10px;
-    }
-  
-    .certificates-title {
-      font-size: 1.2rem;
-    }
-  
-    .certificate-title {
-      font-size: 0.9rem;
-    }
-  }
-  
+.certificates-title {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: #03183f;
+  margin-bottom: 40px;
+}
 
-  /* Модальное окно */
+.certificates-slider {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.certificate-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.certificate-card:hover {
+  transform: scale(1.005);
+}
+
+.certificate-image {
+  width: 65%;
+  height: auto;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: #03183f;
+}
+
+.slick-dots li button:before {
+  color: #03183f;
+}
+
+/* Modal Styles */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -77,12 +59,12 @@
 }
 
 .modal-content {
-  position: relative;
-  background: #fff;
+  background-color: #fff;
   border-radius: 10px;
-  overflow: hidden;
   max-width: 90%;
   max-height: 90%;
+  overflow: hidden;
+  position: relative;
 }
 
 .modal-image {
@@ -94,100 +76,46 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  background: #03183f;
-  color: #fff;
+  background-color: #03183f;
+  color: white;
   border: none;
   border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  font-size: 1.2rem;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
 }
 
 .close-button:hover {
-  background: #0241a8;
+  background-color: #0241a8;
 }
 
-/* Для мобильных устройств */
+/* Responsive Design */
 @media (max-width: 768px) {
+  .certificates-title {
+    font-size: 2rem;
+  }
+
   .modal-content {
     max-width: 100%;
     max-height: 100%;
   }
 }
 
-.certificates-title {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #03183f;
-}
-
-.react-photo-gallery--gallery img {
-  border-radius: 10px;
-  transition: transform 0.2s ease-in-out;
-}
-
-.react-photo-gallery--gallery img:hover {
-  transform: scale(1.02);
-}
-.certificates-container {
-  padding: 4% 0;
-  
-}
-
-.certificates-title {
-  font-size: 2.4rem;
-  color: #03183f;
-  padding: 0 0 0 4%;
-  text-align: left;
-}
-
-.react-photo-gallery--gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 15px;
-}
-
-img {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-}
-
-img:hover {
-  transform: scale(1.0005);
-}
-
-.modal-content {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 80%;
-}
-
-.carousel .carousel-slide img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .certificates-title {
     font-size: 1.8rem;
   }
 
-  .react-photo-gallery--gallery {
-    gap: 10px;
+  .certificate-card {
+    margin: 10px auto;
+    width: 90%;
   }
-}
 
-@media (max-width: 480px) {
-  .certificates-title {
-    font-size: 1.5rem;
+  .modal-content {
+    padding: 10px;
   }
 }

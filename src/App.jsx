@@ -14,7 +14,6 @@ import SliderWithText111 from "./components/SliderWithText111";
 import SliderWithText22 from "./components/SliderWithText22";
 import SliderWithText1111 from "./components/SliderWithText1111";
 import ContactForm from "./components/ContactForm";
-import AboutWithMap from "./components/AboutWithMap";
 import SliderWithText222 from "./components/SliderWithText222";
 
 
@@ -27,9 +26,16 @@ function App() {
       <div className="mainOfPadd">
         <HomeCarousel />
       </div>
+
+      
+      <section id="about">
       <AboutSection/>
+      </section>
       <ServicesPage/>
+      <section id="services">
       <Certificates />
+      </section>
+      
       <SliderWithText />
       <SliderWithText11/>
       <SliderWithText2/>
@@ -37,8 +43,9 @@ function App() {
       <SliderWithText22 />
       <SliderWithText1111 />
       <SliderWithText222 />
+      <section id="contact">
       <ContactForm />
-      <AboutWithMap/>
+      </section>
       <Footer />
     </>
   );

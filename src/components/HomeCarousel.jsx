@@ -1,18 +1,15 @@
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import "./HomeCarousel.css";
 import { useTranslation } from "react-i18next";
 
 const HomeCarousel = () => {
   const { t, i18n } = useTranslation();
-
   const [currentWord, setCurrentWord] = useState(0);
   const [fadeOut, setFadeOut] = useState(false);
+  const [inView, setInView] = useState(false);
 
-  const words = [
-    t("d1"),
-    t("d2"),
-    t("d3")
-  ];
+  const words = [t("d1"), t("d2"), t("d3")];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -21,26 +18,60 @@ const HomeCarousel = () => {
         setCurrentWord((prevWord) => (prevWord + 1) % words.length);
         setFadeOut(false);
       }, 500);
-    }, 2500); 
+    }, 2500);
 
     return () => clearInterval(interval);
   }, [words.length]);
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
+  useEffect(() => {
+    const handleIntersection = (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setInView(true);
+        } else {
+          setInView(false);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, {
+      root: null,
+      threshold: 0.5,
+    });
+
+    const carouselElement = document.querySelector(".carousel");
+    if (carouselElement) {
+      observer.observe(carouselElement);
+    }
+
+    return () => {
+      if (carouselElement) {
+        observer.unobserve(carouselElement);
+      }
+    };
+  }, []);
 
   return (
-    <div className="carousel">
-      <div className="carousel-text">
+    <motion.div
+      className="carousel"
+      initial={{ opacity: 0, y: 50 }}
+      animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
+      transition={{ duration: 0.5 }}
+    >
+      <motion.div
+        className="carousel-text"
+        initial={{ opacity: 0 }}
+        animate={inView ? { opacity: 1 } : { opacity: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <p className="dobro">{t("dobro")}</p>
         <h1>MTI International</h1>
         <p className={`changing-text ${fadeOut ? "fade-out" : "fade-in"}`}>
           {words[currentWord]}
         </p>
         <p className="w50">{t("welcome1")}</p>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

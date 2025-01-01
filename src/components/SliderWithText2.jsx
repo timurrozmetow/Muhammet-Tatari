@@ -1,12 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
+import { motion, useAnimation } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./SliderWithText.css"; // Подключите CSS для оформления
+import "./SliderWithText.css";
 import { useTranslation } from "react-i18next";
 
 const SliderWithText2 = () => {
   const { t } = useTranslation();
+  const sliderControls = useAnimation();
+  const textControls = useAnimation();
+  const [sliderRef, setSliderRef] = useState(null);
+  const [textRef, setTextRef] = useState(null);
 
   const slides = [
     { id: 1, image: "1/d1.jpg", alt: "Slide 1" },
@@ -25,9 +30,47 @@ const SliderWithText2 = () => {
     autoplaySpeed: 3000,
   };
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          sliderControls.start({ opacity: 1, x: 0 });
+        } else {
+          sliderControls.start({ opacity: 0, x: -50 });
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    const textObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          textControls.start({ opacity: 1, x: 0 });
+        } else {
+          textControls.start({ opacity: 0, x: 50 });
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (sliderRef) observer.observe(sliderRef);
+    if (textRef) textObserver.observe(textRef);
+
+    return () => {
+      if (sliderRef) observer.unobserve(sliderRef);
+      if (textRef) textObserver.unobserve(textRef);
+    };
+  }, [sliderRef, textRef, sliderControls, textControls]);
+
   return (
     <div className="slider-with-text-container">
-      <div className="slider-section">
+      <motion.div
+        ref={setSliderRef}
+        className="slider-section"
+        initial={{ opacity: 0, x: -50 }}
+        animate={sliderControls}
+        transition={{ duration: 0.5 }}
+      >
         <Slider {...sliderSettings}>
           {slides.map((slide) => (
             <div key={slide.id} className="slide-item">
@@ -35,8 +78,15 @@ const SliderWithText2 = () => {
             </div>
           ))}
         </Slider>
-      </div>
-      <div className="text-section">
+      </motion.div>
+
+      <motion.div
+        ref={setTextRef}
+        className="text-section"
+        initial={{ opacity: 0, x: 50 }}
+        animate={textControls}
+        transition={{ duration: 0.5 }}
+      >
         <h2>{t("metalsTitle")}</h2>
         <p>{t("metalsDescription1")}</p>
         <p>{t("metalsDescription2")}</p>
@@ -44,7 +94,7 @@ const SliderWithText2 = () => {
           <li>{t("metalsDescription3")}</li>
           <li>{t("metalsDescription4")}</li>
         </ul>
-      </div>
+      </motion.div>
     </div>
   );
 };

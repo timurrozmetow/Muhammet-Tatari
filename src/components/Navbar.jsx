@@ -10,63 +10,37 @@ const Navbar = () => {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    setMenuOpen(false); // Close the menu after language change
   };
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY > 50);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const closeMenu = () => {
-    setMenuOpen(false);
-  };
+  const availableLanguages = [
+    { code: "en", label: "English" },
+    { code: "ru", label: "Russian" },
+    { code: "tm", label: "Turkmen" },
+    { code: "tr", label: "Turkish" },
+    { code: "fa", label: "Farsi" },
+  ].filter((lang) => lang.code !== i18n.language);
 
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="logo">
-        <img className="ImgLogo" src="logo/q.webp" alt="logo" />
+        <img className="ImgLogo" src="logo/q.webp" alt="Logo" />
       </div>
       <div className={`nav-links ${menuOpen ? "open" : ""}`}>
-        <Link
-          to="about"
-          smooth={true}
-          duration={500}
-          className="nav-link"
-          onClick={closeMenu}
-        >
-          {t("about")}
-        </Link>
-        <Link
-          to="capacity"
-          smooth={true}
-          duration={500}
-          className="nav-link"
-          onClick={closeMenu}
-        >
-          {t("capacity")}
-        </Link>
-        <Link
-          to="railways"
-          smooth={true}
-          duration={500}
-          className="nav-link"
-          onClick={closeMenu}
-        >
-          {t("wagon")}
-        </Link>
         <Link
           to="services"
           smooth={true}
           duration={500}
           className="nav-link"
-          onClick={closeMenu}
+          onClick={() => setMenuOpen(false)}
         >
           {t("certificates")}
         </Link>
@@ -75,13 +49,42 @@ const Navbar = () => {
           smooth={true}
           duration={500}
           className="nav-link"
-          onClick={closeMenu}
+          onClick={() => setMenuOpen(false)}
         >
           {t("contact")}
         </Link>
+        <Link
+          to="about"
+          smooth={true}
+          duration={500}
+          className="nav-link"
+          onClick={() => setMenuOpen(false)}
+        >
+          {t("about")}
+        </Link>
         <div className="language-switcher">
-          <button onClick={() => changeLanguage("en")}>EN</button>
-          <button onClick={() => changeLanguage("ru")}>RU</button>
+          <div className="selected-language">
+            <img
+              src={`/icons/${i18n.language}.svg`}
+              alt="Current Language"
+              className="language-icon"
+            />
+          </div>
+          <div className="language-menu">
+            {availableLanguages.map((lang) => (
+              <button
+                key={lang.code}
+                onClick={() => changeLanguage(lang.code)}
+                className="language-button"
+              >
+                <img
+                  src={`/icons/${lang.code}.svg`}
+                  alt={lang.label}
+                  className="language-icon"
+                />
+              </button>
+            ))}
+          </div>
         </div>
       </div>
       <div

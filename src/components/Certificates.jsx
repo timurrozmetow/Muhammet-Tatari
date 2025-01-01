@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
+import { motion } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./Certificates.css";
+import { useTranslation } from "react-i18next";
+
 
 const Certificates = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -16,30 +19,23 @@ const Certificates = () => {
   ];
 
   const settings = {
-    dots: false,
+    // dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 2000,
     responsive: [
       {
         breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,
-        },
-      },
-      {
-        breakpoint: 768,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 768,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -55,35 +51,66 @@ const Certificates = () => {
   const closeModal = () => {
     setSelectedImage(null);
   };
+  const { t } = useTranslation();
+
 
   return (
     <div className="certificates-container">
-      <h2 className="certificates-title">Our Certificates</h2>
-      <Slider {...settings}>
-        {certificates.map((certificate) => (
-          <div
-            key={certificate.id}
-            className="certificate-card"
-            onClick={() => openModal(certificate.image)}
-          >
-            <img
-              src={certificate.image}
-              alt={certificate.title}
-              className="certificate-image"
-            />
-          </div>
-        ))}
-      </Slider>
+      <motion.h2
+        className="certificates-title"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+      >
+        {t("cert")}
+      </motion.h2>
+
+      <motion.div
+        className="certificates-slider"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <Slider {...settings}>
+          {certificates.map((certificate) => (
+            <motion.div
+              key={certificate.id}
+              className="certificate-card"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300 }}
+              onClick={() => openModal(certificate.image)}
+            >
+              <img
+                src={certificate.image}
+                alt={certificate.title}
+                className="certificate-image"
+              />
+            </motion.div>
+          ))}
+        </Slider>
+      </motion.div>
 
       {selectedImage && (
-        <div className="modal-overlay" onClick={closeModal}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+        <motion.div
+          className="modal-overlay"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          onClick={closeModal}
+        >
+          <motion.div
+            className="modal-content"
+            onClick={(e) => e.stopPropagation()}
+            initial={{ scale: 0.8 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 0.3 }}
+          >
             <img src={selectedImage} alt="Certificate" className="modal-image" />
             <button className="close-button" onClick={closeModal}>
               &times;
             </button>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       )}
     </div>
   );

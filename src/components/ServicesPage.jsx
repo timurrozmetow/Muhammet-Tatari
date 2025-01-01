@@ -1,11 +1,13 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useEffect, useState } from "react";
+import { motion, useAnimation } from "framer-motion";
 import { FaTruck, FaProjectDiagram, FaShoppingCart } from "react-icons/fa";
 import "./ServicesPage.css";
 import { useTranslation } from "react-i18next";
 
 const ServicesPage = () => {
   const { t } = useTranslation();
+  const controls = useAnimation();
+  const [refElements, setRefElements] = useState([]);
 
   const services = [
     {
@@ -28,21 +30,54 @@ const ServicesPage = () => {
     },
   ];
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry, index) => {
+          if (entry.isIntersecting) {
+            controls.start((custom) => ({
+              opacity: 1,
+              x: 0,
+              transition: {
+                duration: 0.6,
+                delay: custom * 0.2,
+              },
+            }));
+          } else {
+            controls.start({ opacity: 0, x: entry.target.dataset.index % 2 === 0 ? -50 : 50 });
+          }
+        });
+      },
+      { threshold: 0.5 }
+    );
+
+    refElements.forEach((el) => observer.observe(el));
+
+    return () => {
+      refElements.forEach((el) => observer.unobserve(el));
+    };
+  }, [refElements, controls]);
+
   return (
     <div className="services-container">
       <motion.h2
         className="services-title"
-        initial={{ opacity: 0, y: -20 }}
+        initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
       >
         {t("Services")}
       </motion.h2>
       <div className="services-grid">
-        {services.map((service) => (
+        {services.map((service, index) => (
           <motion.div
             key={service.id}
             className="service-card"
+            ref={(el) => setRefElements((prev) => [...prev.filter((e) => e !== el), el])}
+            custom={index}
+            data-index={index}
+            initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+            animate={controls}
           >
             <div className="service-icon">{service.icon}</div>
             <h3 className="service-title">{service.title}</h3>
