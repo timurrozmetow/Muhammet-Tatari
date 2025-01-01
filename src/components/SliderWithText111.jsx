@@ -3,8 +3,11 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./SliderWithText11.css"; // Подключите CSS для оформления
+import { useTranslation } from "react-i18next";
 
 const SliderWithText111 = () => {
+  const { t } = useTranslation();
+
   const slides = [
     { id: 1, image: "1/k1.jpg", alt: "Slide 1" },
     { id: 2, image: "1/k2.jpg", alt: "Slide 2" },
@@ -33,19 +36,14 @@ const SliderWithText111 = () => {
         </Slider>
       </div>
       <div className="text-section11">
-        <h2>About:</h2>
+        <h2>{t("cannedTitle")}</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim hic
-          quisquam, quod corrupti nulla blanditiis ad. Cus consequuntur.
+        {t("cannedDescription1")}
         </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim hic
-          quisquam, quod corrupti nulla blanditiis ad. Cus consequuntur.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim hic
-          quisquam, quod corrupti nulla blanditiis ad. Cus consequuntur.
-        </p>
+        <ul className="styled-list">
+          <li>{t("cannedDescription3")}</li>
+          <li>{t("cannedDescription5")}</li>
+        </ul>
       </div>
     </div>
   );

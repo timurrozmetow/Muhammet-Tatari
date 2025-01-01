@@ -1,10 +1,11 @@
 import React from "react";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import "./SliderWithText.css"; // Подключите CSS для оформления
+import { useTranslation } from "react-i18next";
 
 const SliderWithText = () => {
+  const { t } = useTranslation();
+
   const slides = [
     { id: 1, image: "1/m1.png", alt: "Slide 1" },
     { id: 2, image: "1/m2.png", alt: "Slide 2" },
@@ -33,19 +34,13 @@ const SliderWithText = () => {
         </Slider>
       </div>
       <div className="text-section">
-        <h2>About:</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim hic
-          quisquam, quod corrupti nulla blanditiis ad. Cus consequuntur.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim hic
-          quisquam, quod corrupti nulla blanditiis ad. Cus consequuntur.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim hic
-          quisquam, quod corrupti nulla blanditiis ad. Cus consequuntur.
-        </p>
+        <h2>{t("metalStructuresTitle")}</h2>
+        <p>{t("metalStructuresDescription1")}</p>
+        <ul className="styled-list">
+          
+          <li>{t("metalStructuresDescription2")}</li>
+          <li>{t("metalStructuresDescription3")}</li>
+        </ul>
       </div>
     </div>
   );

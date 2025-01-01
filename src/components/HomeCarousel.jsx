@@ -9,9 +9,9 @@ const HomeCarousel = () => {
   const [fadeOut, setFadeOut] = useState(false);
 
   const words = [
-    "Мероприятия мирового уровня!",
-    "Глобальное влияние.",
-    "Только лучшие решения."
+    t("d1"),
+    t("d2"),
+    t("d3")
   ];
 
   useEffect(() => {
@@ -20,8 +20,8 @@ const HomeCarousel = () => {
       setTimeout(() => {
         setCurrentWord((prevWord) => (prevWord + 1) % words.length);
         setFadeOut(false);
-      }, 500); // Время для плавного исчезновения
-    }, 2500); // Общее время показа текста
+      }, 500);
+    }, 2500); 
 
     return () => clearInterval(interval);
   }, [words.length]);
@@ -33,7 +33,7 @@ const HomeCarousel = () => {
   return (
     <div className="carousel">
       <div className="carousel-text">
-        <p className="dobro">Добро пожаловать!</p>
+        <p className="dobro">{t("dobro")}</p>
         <h1>MTI International</h1>
         <p className={`changing-text ${fadeOut ? "fade-out" : "fade-in"}`}>
           {words[currentWord]}

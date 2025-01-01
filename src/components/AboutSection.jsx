@@ -1,16 +1,16 @@
 import React from "react";
-import "./AboutSection.css"; // Подключите CSS файл
+import "./AboutSection.css"; 
+import { useTranslation } from "react-i18next";
 
 const AboutSection = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <div className="container">
       <div className="about-section">
-        <h2>About us:</h2>
+        <h2>{t("aboutGen")}</h2>
         <p className="w60">
-          At MTI International, we are a global leader in sourcing and logistics
-          management, dedicated to helping businesses succeed. With a strong
-          network of partners and extensive expertise across industries, we
-          ensure seamless and reliable operations from start to finish.
+        {t("about1")}
         </p>
       </div>
 
@@ -18,22 +18,19 @@ const AboutSection = () => {
         <div className="stat">
           <h3>5+</h3>
           <p>
-            Fluent communication in Turkish, Turkmen, English, Russian, and
-            Farsi ensures smooth collaboration across borders.
+          {t("about2")}
           </p>
         </div>
         <div className="stat">
           <h3>8+</h3>
           <p>
-            years of experience: Trusted by clients worldwide to deliver
-            cost-effective and reliable solutions.
+          {t("about3")}
           </p>
         </div>
         <div className="stat">
           <h3>9+</h3>
           <p>
-            Industries served: Our expertise spans multiple sectors, including
-            manufacturing, construction, and more.
+          {t("about4")}
           </p>
         </div>
       </div>

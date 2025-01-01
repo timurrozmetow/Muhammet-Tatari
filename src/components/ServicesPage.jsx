@@ -43,7 +43,6 @@ const ServicesPage = () => {
           <motion.div
             key={service.id}
             className="service-card"
-            whileTap={{ scale: 0.95 }}
           >
             <div className="service-icon">{service.icon}</div>
             <h3 className="service-title">{service.title}</h3>
