@@ -3,9 +3,6 @@
       "env": {
         "NODE_ENV": "production"
       }
-    },
-    "scripts": {
-      "build": "pnpm install && pnpm build"
     }
   }
   
