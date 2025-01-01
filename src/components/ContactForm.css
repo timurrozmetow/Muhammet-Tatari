@@ -1,0 +1,156 @@
+/* Контейнер для секции контактов */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 40px;
+  border-radius: 10px;
+  align-items: center;
+}
+
+/* Секция с контактной информацией */
+.contact-info {
+  flex: 1;
+  max-width: 40%;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+}
+
+.contact-info h2 {
+  font-size: 1.8rem;
+  color: #03183f;
+  margin-bottom: 10px;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #747474;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #03183f;
+  color: #ffffff;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+  background-color: #0241a8;
+}
+
+.phone-numbers p {
+  font-size: 1rem;
+  color: #03183f;
+  margin: 5px 0;
+}
+
+/* Секция с формой */
+.contact-form {
+  flex: 1;
+  max-width: 60%;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.contact-form h2 {
+  font-size: 2rem;
+  color: #03183f;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 1rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #03183f;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.send-button {
+  padding: 15px 30px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #03183f;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.send-button:hover {
+  background-color: #0241a8;
+  transform: scale(1.05);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .contact-info {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-info h2,
+  .contact-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .send-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
