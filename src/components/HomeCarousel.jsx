@@ -33,7 +33,7 @@ const HomeCarousel = () => {
   return (
     <div className="carousel">
       <div className="carousel-text">
-        <p className="dobro">Добро пожаловать! Мероприятия мирового уровня! Глобальное влияние</p>
+        <p className="dobro">Добро пожаловать!</p>
         <h1>MTI International</h1>
         <p className={`changing-text ${fadeOut ? "fade-out" : "fade-in"}`}>
           {words[currentWord]}
