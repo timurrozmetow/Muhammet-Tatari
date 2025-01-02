@@ -170,3 +170,149 @@ background-color: #ffffff;
     
   }
 }
+
+/* Основные стили */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.navbar.scrolled {
+  background-color: #002855;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.logo .ImgLogo {
+  width: 60%;
+  max-width: 120px;
+  height: auto;
+}
+.nav-links {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: #002855;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+.navbar.scrolled .nav-link {
+  color: #ffffff;
+}
+
+/* Language Switcher */
+.language-switcher {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.selected-language img {
+  width: 30px;
+  height: 30px;
+}
+
+.language-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.language-switcher:hover .language-menu {
+  display: flex;
+}
+
+.language-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 5px;
+}
+
+.language-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Hamburger Menu */
+.menu-icon {
+  display: none;
+}
+
+.menu-icon.open .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-icon.open .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+.menu-icon.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.mobile-language-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.mobile-language-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.mobile-language-icon {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 768px) {
+  .selected-language{
+    display: none;
+  }
+  .language-menu{
+    display: none;
+  }
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30px;
+    height: 25px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 20px 30px;
+  }
+}
+

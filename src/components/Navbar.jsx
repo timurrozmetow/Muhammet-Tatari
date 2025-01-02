@@ -10,7 +10,7 @@ const Navbar = () => {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-    setMenuOpen(false); // Close the menu after language change
+    setMenuOpen(false); // Close menu after language change
   };
 
   useEffect(() => {
@@ -22,12 +22,12 @@ const Navbar = () => {
   }, []);
 
   const availableLanguages = [
-    { code: "en", label: "English" },
-    { code: "ru", label: "Russian" },
-    { code: "tm", label: "Turkmen" },
-    { code: "tr", label: "Turkish" },
-    { code: "fa", label: "Farsi" },
-  ].filter((lang) => lang.code !== i18n.language);
+    { code: "en", label: "English", flag: "/icons/en.svg" },
+    { code: "ru", label: "Russian", flag: "/icons/ru.svg" },
+    { code: "tm", label: "Turkmen", flag: "/icons/tm.svg" },
+    { code: "tr", label: "Turkish", flag: "/icons/tr.svg" },
+    { code: "fa", label: "Farsi", flag: "/icons/fa.svg" },
+  ];
 
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
@@ -62,32 +62,57 @@ const Navbar = () => {
         >
           {t("about")}
         </Link>
-        <div className="language-switcher">
-          <div className="selected-language">
+         <div className="language-switcher">
+         <div className="selected-language">
             <img
               src={`/icons/${i18n.language}.svg`}
-              alt="Current Language"
+              alt={t("currentLanguage")}
               className="language-icon"
             />
           </div>
-          <div className="language-menu">
-            {availableLanguages.map((lang) => (
-              <button
-                key={lang.code}
-                onClick={() => changeLanguage(lang.code)}
-                className="language-button"
-              >
-                <img
-                  src={`/icons/${lang.code}.svg`}
-                  alt={lang.label}
-                  className="language-icon"
-                />
-              </button>
-            ))}
-          </div>
+          {/* {menuOpen && (
+        <div className="mobile-language-menu">
+          {availableLanguages.map((lang) => (
+            <div
+              key={lang.code}
+              className="mobile-language-item"
+              onClick={() => changeLanguage(lang.code)}
+            >
+              <img src={lang.flag} alt={lang.label} className="mobile-language-icon" />
+            </div>
+          ))}
         </div>
-        
+      )} */}
+          <div className="language-menu">
+            {availableLanguages
+              .filter((lang) => lang.code !== i18n.language)
+              .map((lang) => (
+                <button
+                  key={lang.code}
+                  onClick={() => changeLanguage(lang.code)}
+                  className="language-button"
+                >
+                  <img src={lang.flag} alt={lang.label} className="language-icon" />
+                  {lang.label}
+                </button>
+              ))}
+          </div> 
+          {menuOpen && (
+        <div className="mobile-language-menu">
+          {availableLanguages.map((lang) => (
+            <div
+              key={lang.code}
+              className="mobile-language-item"
+              onClick={() => changeLanguage(lang.code)}
+            >
+              <img src={lang.flag} alt={lang.label} className="mobile-language-icon" />
+            </div>
+          ))}
+        </div>
+      )}
+        </div> 
       </div>
+      {/* Hamburger Menu */}
       <div
         className={`menu-icon ${menuOpen ? "open" : ""}`}
         onClick={() => setMenuOpen(!menuOpen)}
@@ -96,6 +121,8 @@ const Navbar = () => {
         <div className="line"></div>
         <div className="line"></div>
       </div>
+      {/* Language Switcher in Hamburger Menu */}
+
     </nav>
   );
 };
