@@ -279,6 +279,9 @@ background-color: #ffffff;
 }
 
 @media (max-width: 768px) {
+  .language-switcher:hover .language-menu{
+    display: none;
+  }
   .selected-language{
     display: none;
   }
