@@ -279,6 +279,7 @@ background-color: #ffffff;
 }
 
 @media (max-width: 768px) {
+  
   .language-switcher:hover .language-menu{
     display: none;
   }
@@ -308,5 +309,9 @@ background-color: #ffffff;
     width: 100%;
     padding: 20px 30px;
   }
+  .navbar.scrolled .nav-link {
+    color: #002855;
+  }
+
 }
 

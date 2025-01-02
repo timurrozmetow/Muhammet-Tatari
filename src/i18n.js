@@ -5,6 +5,12 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   en: {
     translation: {
+      "korm": "Feed for fish and broiler chickens by MT International",
+    "korm1": "We understand the importance of proper nutrition and offer:",
+    "korm2": "A balanced composition rich in proteins, vitamins, and minerals.",
+    "korm3": "Formulas for various types of fish, including freshwater and marine species.",
+    "korm4": "For farmers raising broiler chickens, we provide feeds that promote rapid weight gain and maintain health.",
+    "korm5": "An economical solution to reduce feeding costs.",
       "s01": "Polyethylene and Compound Polypropylene",
       "s02": "At MTI International, we are proud to offer our customers high-quality polyethylene (PE) and compound polypropylene (PP) that meet international standards.",
       "s03": "Our Polyethylene Types (PE):",
@@ -120,6 +126,12 @@ const resources = {
   },
   tr: {
     translation: {
+      "korm": "MT International’dan balık ve broiler tavuk yemleri",
+      "korm1": "Doğru beslenmenin önemini anlıyoruz ve şunları sunuyoruz:",
+      "korm2": "Proteinler, vitaminler ve mineraller açısından zengin dengeli bir bileşim.",
+      "korm3": "Tatlı su ve deniz türleri dahil olmak üzere çeşitli balık türleri için formüller.",
+      "korm4": "Broiler tavuk yetiştiriciliği yapan çiftçiler için hızlı kilo alımı sağlayan ve sağlığı destekleyen yemler sunuyoruz.",
+      "korm5": "Besleme maliyetlerini düşürmek için ekonomik bir çözüm.",
       s01:"Polyethylene ve Compound Polypropylene",
       s02:"MTI International olarak, yüksek kalite ve uluslararası standartlara uygun polyethylene (PE) ve compound polypropylene (PP) ürünlerini müşterilerimize sunmaktan gurur duyuyoruz",
       s03:"Polyethylene Çeşitlerimiz (PE):",
@@ -231,6 +243,12 @@ const resources = {
   },
   tm: {
     translation: {
+      "korm": "MT International-dan balyk we broýler towuk üçin iýmler",
+    "korm1": "Biz dogry iýmitlenmegiň möhümdigini bilýäris we hödürleýäris:",
+    "korm2": "Beloklar, witaminler we minerallar bilen baýlaşdyrylan deňagramly düzümler.",
+    "korm3": "Suwasty we deňiz balyklary üçin ýöriteleşdirilen formulalar.",
+    "korm4": "Broýler towuk ösdürip ýetişdirýän fermerler üçin tiz agram goşmagyny we saglygyny üpjün edýän iýmler hödürleýäris.",
+    "korm5": "Iýmit çykdajylaryny azaltmak üçin tygşytly çözgüt.",
       "s01": "Polietilen we Kompaýnd Polipropilen",
   "s02": "MTI International, müşderilerine ýokary hilli we halkara standartlaryna laýyk gelýän polietilen (PE) we kompaýnd polipropilen (PP) hödürlemek bilen buýsanýar.",
   "s03": "Polietilen görnüşlerimiz (PE):",
@@ -343,6 +361,12 @@ const resources = {
 
   fa: {
     translation: {
+      "korm": "خوراک برای ماهی و مرغ‌های گوشتی از MT International",
+      "korm1": "ما اهمیت تغذیه مناسب را درک می‌کنیم و ارائه می‌دهیم:",
+      "korm2": "ترکیب متعادلی غنی از پروتئین‌ها، ویتامین‌ها و مواد معدنی.",
+      "korm3": "فرمول‌هایی برای انواع مختلف ماهی‌ها، از جمله گونه‌های آب شیرین و دریایی.",
+      "korm4": "برای کشاورزانی که مرغ‌های گوشتی پرورش می‌دهند، خوراک‌هایی که باعث افزایش سریع وزن و حفظ سلامتی می‌شوند ارائه می‌دهیم.",
+      "korm5": "یک راه‌حل اقتصادی برای کاهش هزینه‌های تغذیه.",
       "s01": "پلی‌اتیلن و پلی‌پروپیلن ترکیبی",
   "s02": "شرکت MTI International با افتخار پلی‌اتیلن (PE) و پلی‌پروپیلن ترکیبی (PP) با کیفیت بالا و مطابق با استانداردهای بین‌المللی را به مشتریان خود ارائه می‌دهد.",
   "s03": "انواع پلی‌اتیلن ما (PE):",
@@ -454,6 +478,12 @@ const resources = {
   },  
   ru: {
     translation: {
+      korm:"Корма для рыб и бройлерных кур от MT International",
+      korm1:"Мы понимаем, насколько важно обеспечить правильное питание и предлагаем:",
+      korm2:"Сбалансированный состав, богатый белками, витаминами и минералами.",
+      korm3:"Формулы для различных видов рыб, включая пресноводные и морские.",
+      korm4:"Для фермеров, занимающихся выращиванием бройлерных кур, мы предлагаем корма, которые способствуют быстрому набору веса и поддержанию здоровья.",
+      korm5:"Экономичное решение, обеспечивающее снижение затрат на откорм.",
       "s01": "Полиэтилен и компаунд полипропилен",
       "s02": "MTI International с гордостью предлагает своим клиентам полиэтилен (PE) и компаунд полипропилен (PP) высокого качества, соответствующие международным стандартам.",
       "s03": "Наши виды полиэтилена (PE):",
