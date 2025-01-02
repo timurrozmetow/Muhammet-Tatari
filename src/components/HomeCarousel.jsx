@@ -36,7 +36,6 @@ const HomeCarousel = () => {
 
     const observer = new IntersectionObserver(handleIntersection, {
       root: null,
-      threshold: 0.5,
     });
 
     const carouselElement = document.querySelector(".carousel");

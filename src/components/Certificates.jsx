@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 import "./Certificates.css";
 import { useTranslation } from "react-i18next";
 
-
 const Certificates = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
@@ -19,7 +18,6 @@ const Certificates = () => {
   ];
 
   const settings = {
-    // dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
@@ -51,8 +49,8 @@ const Certificates = () => {
   const closeModal = () => {
     setSelectedImage(null);
   };
-  const { t } = useTranslation();
 
+  const { t } = useTranslation();
 
   return (
     <div className="certificates-container">
@@ -60,7 +58,7 @@ const Certificates = () => {
         className="certificates-title"
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.6 }}
       >
         {t("cert")}
       </motion.h2>
@@ -76,8 +74,7 @@ const Certificates = () => {
             <motion.div
               key={certificate.id}
               className="certificate-card"
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 300 }}
+              whileHover={{ scale: 1.1 }}
               onClick={() => openModal(certificate.image)}
             >
               <img

@@ -39,7 +39,7 @@ const ServicesPage = () => {
               opacity: 1,
               x: 0,
               transition: {
-                duration: 0.6,
+                duration: 0.4,
                 delay: custom * 0.2,
               },
             }));
@@ -48,7 +48,6 @@ const ServicesPage = () => {
           }
         });
       },
-      { threshold: 0.5 }
     );
 
     refElements.forEach((el) => observer.observe(el));
@@ -64,7 +63,7 @@ const ServicesPage = () => {
         className="services-title"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
+        transition={{ duration: 0.5 }}
       >
         {t("Services")}
       </motion.h2>
@@ -78,6 +77,7 @@ const ServicesPage = () => {
             data-index={index}
             initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
             animate={controls}
+            transition={{ duration: 0.5 }}
           >
             <div className="service-icon">{service.icon}</div>
             <h3 className="service-title">{service.title}</h3>

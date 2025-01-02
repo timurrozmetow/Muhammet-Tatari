@@ -21,7 +21,6 @@ const SliderWithText2 = () => {
   ];
 
   const sliderSettings = {
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -39,7 +38,6 @@ const SliderWithText2 = () => {
           sliderControls.start({ opacity: 0, x: -50 });
         }
       },
-      { threshold: 0.5 }
     );
 
     const textObserver = new IntersectionObserver(
@@ -50,7 +48,6 @@ const SliderWithText2 = () => {
           textControls.start({ opacity: 0, x: 50 });
         }
       },
-      { threshold: 0.5 }
     );
 
     if (sliderRef) observer.observe(sliderRef);

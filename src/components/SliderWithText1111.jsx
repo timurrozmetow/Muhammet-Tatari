@@ -20,7 +20,6 @@ const SliderWithText1111 = () => {
   ];
 
   const sliderSettings11 = {
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -38,7 +37,6 @@ const SliderWithText1111 = () => {
           sliderControls.start({ opacity: 0, x: -50 });
         }
       },
-      { threshold: 0.5 } // Элемент должен быть полностью видим, чтобы считаться "видимым"
     );
 
     const textObserver = new IntersectionObserver(
@@ -49,7 +47,6 @@ const SliderWithText1111 = () => {
           textControls.start({ opacity: 0, x: 50 });
         }
       },
-      { threshold: 0.5 } // Элемент должен быть полностью видим, чтобы считаться "видимым"
     );
 
     if (sliderRef) observer.observe(sliderRef);

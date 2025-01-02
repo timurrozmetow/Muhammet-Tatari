@@ -1,4 +1,3 @@
-/* General Navbar Styles */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -9,22 +8,18 @@
   top: 0;
   width: 100%;
   z-index: 1000;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: background-color 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .navbar.scrolled {
   background-color: #002855;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
-
 .logo .ImgLogo {
   width: 60%;
   max-width: 120px;
   height: auto;
 }
-
-/* Nav Links */
 .nav-links {
   display: flex;
   gap: 30px;
@@ -43,8 +38,8 @@
 }
 
 .nav-link:hover {
-  background-color: #03183fb4;
-  color: #ffffff;
+  border-bottom: #03183fb4;
+  
 }
 
 .navbar.scrolled .nav-link {
@@ -54,7 +49,6 @@
 .navbar.scrolled .menu-icon .line{
 background-color: #ffffff;
 }
-/* Menu Icon */
 .menu-icon {
   display: none;
   cursor: pointer;
@@ -101,7 +95,6 @@ background-color: #ffffff;
   padding: 10px 0;
 }
 
-/* Language Switcher */
 .language-switcher {
   position: relative;
   display: flex;
@@ -147,11 +140,13 @@ background-color: #ffffff;
 
 .language-button:hover {
   background-color: #f0f0f0;
-  border-radius: 5px;
 }
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+  .navbar.scrolled .nav-link {
+    color: #002855;
+  }
   .menu-icon {
     display: flex;
   }
@@ -159,6 +154,7 @@ background-color: #ffffff;
   .nav-links {
     display: none;
     flex-direction: column;
+    gap: 0;
   }
 
   .nav-links.open {
@@ -171,5 +167,6 @@ background-color: #ffffff;
 
   .language-menu {
     right: unset;
+    
   }
 }

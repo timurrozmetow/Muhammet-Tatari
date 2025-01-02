@@ -14,14 +14,14 @@ const SliderWithText01 = () => {
   const [textRef, setTextRef] = useState(null);
 
   const slides = [
-    { id: 1, image: "1/s1.png", alt: "Slide 1" },
-    { id: 2, image: "1/s2.png", alt: "Slide 2" },
-    { id: 3, image: "1/s3.png", alt: "Slide 3" },
-    { id: 4, image: "1/s4.png", alt: "Slide 4" },
+    { id: 1, image: "1/mesh1.jpg", alt: "Slide 1" },
+    { id: 2, image: "1/mesh2.jpg", alt: "Slide 2" },
+    { id: 3, image: "1/mesh3.jpg", alt: "Slide 3" },
+    { id: 4, image: "1/mesh4.jpg", alt: "Slide 4" },
+    { id: 5, image: "1/mesh5.jpg", alt: "Slide 5" },
   ];
 
   const sliderSettings11 = {
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -39,7 +39,6 @@ const SliderWithText01 = () => {
           sliderControls.start({ opacity: 0, x: 50 });
         }
       },
-      { threshold: 0.5 }
     );
 
     const textObserver = new IntersectionObserver(
@@ -50,7 +49,6 @@ const SliderWithText01 = () => {
           textControls.start({ opacity: 0, x: -50 });
         }
       },
-      { threshold: 0.5 }
     );
 
     if (sliderRef) observer.observe(sliderRef);
@@ -86,12 +84,13 @@ const SliderWithText01 = () => {
         animate={textControls}
         transition={{ duration: 0.5 }}
       >
-        <h2>{t("sandwichPanelsTitle")}</h2>
-        <p>{t("sandwichPanelsDescription1")}</p>
-        <ul className="styled-list">
-          <li>{t("sandwichPanelsDescription2")}</li>
-          <li>{t("sandwichPanelsDescription3")}</li>
-          <li>{t("sandwichPanelsDescription4")}</li>
+        <h2>{t("s01")}</h2>
+        <p>{t("s02")}</p>
+        <ul className="styled-list1">
+          <li>{t("s04")}</li>
+          <li>{t("s05")}</li>
+          <li>{t("s06")}</li>
+
         </ul>
       </motion.div>
     </div>

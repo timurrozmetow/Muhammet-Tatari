@@ -16,6 +16,9 @@ import SliderWithText1111 from "./components/SliderWithText1111";
 import ContactForm from "./components/ContactForm";
 import SliderWithText222 from "./components/SliderWithText222";
 import IranProductsPage from "./components/IranProductsPage";
+import SliderWithText01 from "./components/SliderWithText01";
+
+
 
 
 
@@ -36,7 +39,7 @@ function App() {
       <section id="services">
       <Certificates />
       </section>
-      
+      <SliderWithText01 />
       <SliderWithText />
       <SliderWithText11/>
       <SliderWithText2/>

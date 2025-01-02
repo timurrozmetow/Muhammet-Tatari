@@ -42,7 +42,7 @@ const AboutSection = () => {
             ? { opacity: 1, y: 0 }
             : { opacity: 0, y: 50 }
         }
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.5 }}
       >
         <h2>{t("aboutGen")}</h2>
         <p className="w60">{t("about1")}</p>
@@ -57,9 +57,9 @@ const AboutSection = () => {
               ? { opacity: 1, x: 0 }
               : { opacity: 0, x: -50 }
           }
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.5 }}
         >
-          <h3>5+</h3>
+          <h3>{t("digit1")}</h3>
           <p>{t("about2")}</p>
         </motion.div>
 
@@ -73,7 +73,7 @@ const AboutSection = () => {
           }
           transition={{ duration: 0.8 }}
         >
-          <h3>8+</h3>
+          <h3>{t("digit2")}</h3>
           <p>{t("about3")}</p>
         </motion.div>
 
@@ -87,7 +87,7 @@ const AboutSection = () => {
           }
           transition={{ duration: 0.8 }}
         >
-          <h3>9+</h3>
+          <h3>{t("digit3")}</h3>
           <p>{t("about4")}</p>
         </motion.div>
       </div>

@@ -5,6 +5,16 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   en: {
     translation: {
+      "s01": "Polyethylene and Compound Polypropylene",
+      "s02": "At MTI International, we are proud to offer our customers high-quality polyethylene (PE) and compound polypropylene (PP) that meet international standards.",
+      "s03": "Our Polyethylene Types (PE):",
+      "s04": "F7000 Durable and flexible, one of our high-strength polyethylene types.",
+      "s05": "LLD 209 Linear low-density polyethylene, ideal for thin films and packaging solutions.",
+      "s06": "62N07 Offers excellent processability and superior mechanical properties.",
+      "s07": "2420H High-density polyethylene, preferred for industrial and commercial applications.",
+      digit1:"5+",
+      digit2:"8+",
+      digit3:"9+",
       Follow:"Follow us",
       about:"About us",
       dobro:"Welcome!",
@@ -108,9 +118,18 @@ const resources = {
 
     },
   },
-
   tr: {
     translation: {
+      s01:"Polyethylene ve Compound Polypropylene",
+      s02:"MTI International olarak, yüksek kalite ve uluslararası standartlara uygun polyethylene (PE) ve compound polypropylene (PP) ürünlerini müşterilerimize sunmaktan gurur duyuyoruz",
+      s03:"Polyethylene Çeşitlerimiz (PE):",
+      s04:"F7000 Dayanıklı ve esnek, yüksek mukavemetli polietilen çeşitlerimizden biridir.",
+      s05:"LLD 209 Lineer düşük yoğunluklu polietilen, ince filmler ve ambalaj çözümleri için idealdir.",
+      s06:"62N07 Yüksek işlenebilirlik ve mükemmel mekanik özellikler sunar.",
+      s07:"2420H Endüstriyel ve ticari uygulamalarda tercih edilen yüksek yoğunluklu polietilen.",
+      digit1:"5+",
+      digit2:"8+",
+      digit3:"9+",
       Follow:"Takip et",
       about: "Hakkımızda",
       dobro: "Hoşgeldiniz!",
@@ -210,10 +229,18 @@ const resources = {
   "ir11": "Dünyanın herhangi bir yerine hızlı teslimat. Siparişlerinizin zamanında ulaşmasını sağlamak için çalışıyoruz."
     }
   },
-  
-
   tm: {
     translation: {
+      "s01": "Polietilen we Kompaýnd Polipropilen",
+  "s02": "MTI International, müşderilerine ýokary hilli we halkara standartlaryna laýyk gelýän polietilen (PE) we kompaýnd polipropilen (PP) hödürlemek bilen buýsanýar.",
+  "s03": "Polietilen görnüşlerimiz (PE):",
+  "s04": "F7000 Berk we çeýe, ýokary berk polietilen görnüşlerimiziň biri.",
+  "s05": "LLD 209 Çyzykly pes dykyzlykly polietilen, inçe plýonkalar we gaplama çözgütleri üçin ideal.",
+  "s06": "62N07 Ajaýyp işlenip bilnerlik we ýokary mehaniki aýratynlyklary hödürleýär.",
+  "s07": "2420H Senagat we söwda amaly üçin ileri tutulýan ýokary dykyzlykly polietilen.",
+      digit1:"5+",
+      digit2:"8+",
+      digit3:"9+",
       Follow:"Bizi yzarla",
       about: "Biz barada",
       dobro: "Hoş geldiňiz!",
@@ -316,6 +343,16 @@ const resources = {
 
   fa: {
     translation: {
+      "s01": "پلی‌اتیلن و پلی‌پروپیلن ترکیبی",
+  "s02": "شرکت MTI International با افتخار پلی‌اتیلن (PE) و پلی‌پروپیلن ترکیبی (PP) با کیفیت بالا و مطابق با استانداردهای بین‌المللی را به مشتریان خود ارائه می‌دهد.",
+  "s03": "انواع پلی‌اتیلن ما (PE):",
+  "s04": "F7000 بادوام و انعطاف‌پذیر، یکی از انواع پلی‌اتیلن با مقاومت بالا.",
+  "s05": "LLD 209 پلی‌اتیلن با چگالی کم خطی، ایده‌آل برای فیلم‌های نازک و راه‌حل‌های بسته‌بندی.",
+  "s06": "62N07 قابلیت پردازش عالی و خواص مکانیکی برتر ارائه می‌دهد.",
+  "s07": "2420H پلی‌اتیلن با چگالی بالا، مناسب برای کاربردهای صنعتی و تجاری.",
+      digit1:"٥+",
+      digit2:"٨+",
+      digit3:"٩+",
       Follow:"ما را دنبال کنید",
       about: "درباره ما",
       dobro: "خوش آمدید!",
@@ -417,6 +454,16 @@ const resources = {
   },  
   ru: {
     translation: {
+      "s01": "Полиэтилен и компаунд полипропилен",
+      "s02": "MTI International с гордостью предлагает своим клиентам полиэтилен (PE) и компаунд полипропилен (PP) высокого качества, соответствующие международным стандартам.",
+      "s03": "Наши виды полиэтилена (PE):",
+      "s04": "F7000 Прочный и гибкий, один из наших высокопрочных видов полиэтилена.",
+      "s05": "LLD 209 Линейный полиэтилен низкой плотности, идеально подходит для тонких пленок и упаковки.",
+      "s06": "62N07 Обеспечивает высокую обрабатываемость и отличные механические свойства.",
+      "s07": "2420H Высокоплотный полиэтилен, предпочтительный для промышленных и коммерческих применений.",
+      digit1:"5+",
+      digit2:"8+",
+      digit3:"9+",
       Follow:"Следи за нами",
       about: "О нас",
       dobro: "Добро пожаловать!",
