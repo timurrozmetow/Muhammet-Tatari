@@ -10,7 +10,7 @@ const Navbar = () => {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-    setMenuOpen(false); // Close menu after language change
+    setMenuOpen(false);
   };
 
   useEffect(() => {
@@ -70,19 +70,6 @@ const Navbar = () => {
               className="language-icon"
             />
           </div>
-          {/* {menuOpen && (
-        <div className="mobile-language-menu">
-          {availableLanguages.map((lang) => (
-            <div
-              key={lang.code}
-              className="mobile-language-item"
-              onClick={() => changeLanguage(lang.code)}
-            >
-              <img src={lang.flag} alt={lang.label} className="mobile-language-icon" />
-            </div>
-          ))}
-        </div>
-      )} */}
           <div className="language-menu">
             {availableLanguages
               .filter((lang) => lang.code !== i18n.language)
@@ -112,7 +99,6 @@ const Navbar = () => {
       )}
         </div> 
       </div>
-      {/* Hamburger Menu */}
       <div
         className={`menu-icon ${menuOpen ? "open" : ""}`}
         onClick={() => setMenuOpen(!menuOpen)}
@@ -121,8 +107,6 @@ const Navbar = () => {
         <div className="line"></div>
         <div className="line"></div>
       </div>
-      {/* Language Switcher in Hamburger Menu */}
-
     </nav>
   );
 };

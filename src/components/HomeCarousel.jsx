@@ -8,7 +8,7 @@ const HomeCarousel = () => {
   const [currentWord, setCurrentWord] = useState(0);
   const [fadeOut, setFadeOut] = useState(false);
   const [inView, setInView] = useState(false);
-  const [isLoading, setIsLoading] = useState(true); // состояние загрузки
+  const [isLoading, setIsLoading] = useState(true);
 
   const words = [t("d1"), t("d2"), t("d3")];
 
@@ -19,7 +19,7 @@ const HomeCarousel = () => {
         setCurrentWord((prevWord) => (prevWord + 1) % words.length);
         setFadeOut(false);
       }, 500);
-    }, 2500);
+    }, 7000);
 
     return () => clearInterval(interval);
   }, [words.length]);
@@ -51,9 +51,8 @@ const HomeCarousel = () => {
     };
   }, []);
 
-  // Установка таймера для скрытия градиента
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 2000); // 2 сек для градиента
+    const timer = setTimeout(() => setIsLoading(false), 2000); 
     return () => clearTimeout(timer);
   }, []);
 

@@ -1,4 +1,3 @@
-/* Container Styling */
 .slider-with-text-container11 {
   display: flex;
   justify-content: space-between;
@@ -8,8 +7,6 @@
   height: 80vh;
   gap: 2%;
 }
-
-/* Slider Section Styling */
 .slider-section11 {
   flex: 1;
   max-width: 50%;
@@ -45,8 +42,6 @@
 .slick-next {
   display: none !important;
 }
-
-/* Text Section Styling */
 .text-section11 {
   flex: 1;
   max-width: 50%;
@@ -63,7 +58,6 @@
   color: white;
   margin-bottom: 20px;
   text-align: left;
-  /* font-weight: 600; */
 }
 
 .text-section11 p {
@@ -94,8 +88,6 @@
   background-color: #e6e6e6;
   transform: translateX(5px);
 }
-
-/* Responsive Design */
 @media (max-width: 1024px) {
   .slider-with-text-container11 {
     flex-direction: column;

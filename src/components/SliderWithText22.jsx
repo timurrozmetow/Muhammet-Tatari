@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import { motion, useAnimation } from "framer-motion";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./SliderWithText.css"; // Подключите CSS для оформления
+import "./SliderWithText.css";
 import { useTranslation } from "react-i18next";
 
 const SliderWithText22 = () => {
@@ -14,9 +14,9 @@ const SliderWithText22 = () => {
   const [textRef, setTextRef] = useState(null);
 
   const slides = [
-    { id: 1, image: "1/b1.jpg", alt: "Slide 1" },
-    { id: 2, image: "1/b2.jpg", alt: "Slide 2" },
-    { id: 3, image: "1/b3.jpg", alt: "Slide 3" },
+    { id: 1, image: "1/b1.webp", alt: "Slide 1" },
+    { id: 2, image: "1/b2.webp", alt: "Slide 2" },
+    { id: 3, image: "1/b3.webp", alt: "Slide 3" },
   ];
 
   const sliderSettings = {

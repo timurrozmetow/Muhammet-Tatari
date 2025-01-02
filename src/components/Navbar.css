@@ -141,8 +141,6 @@ background-color: #ffffff;
 .language-button:hover {
   background-color: #f0f0f0;
 }
-
-/* Mobile Styles */
 @media (max-width: 768px) {
   .navbar.scrolled .nav-link {
     color: #002855;
@@ -170,8 +168,6 @@ background-color: #ffffff;
     
   }
 }
-
-/* Основные стили */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -210,8 +206,6 @@ background-color: #ffffff;
 .navbar.scrolled .nav-link {
   color: #ffffff;
 }
-
-/* Language Switcher */
 .language-switcher {
   position: relative;
   display: flex;
@@ -239,7 +233,6 @@ background-color: #ffffff;
 .language-switcher:hover .language-menu {
   display: flex;
 }
-
 .language-icon {
   width: 30px;
   height: 30px;
@@ -253,8 +246,6 @@ background-color: #ffffff;
   padding: 5px 10px;
   cursor: pointer;
 }
-
-/* Hamburger Menu */
 .menu-icon {
   display: none;
 }

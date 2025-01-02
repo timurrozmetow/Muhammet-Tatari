@@ -14,11 +14,11 @@ const SliderWithText01 = () => {
   const [textRef, setTextRef] = useState(null);
 
   const slides = [
-    { id: 1, image: "1/mesh1.jpg", alt: "Slide 1" },
-    { id: 2, image: "1/mesh2.jpg", alt: "Slide 2" },
-    { id: 3, image: "1/mesh3.jpg", alt: "Slide 3" },
-    { id: 4, image: "1/mesh4.jpg", alt: "Slide 4" },
-    { id: 5, image: "1/mesh5.jpg", alt: "Slide 5" },
+    { id: 1, image: "1/mesh1.webp", alt: "Slide 1" },
+    { id: 2, image: "1/mesh2.webp", alt: "Slide 2" },
+    { id: 3, image: "1/mesh3.webp", alt: "Slide 3" },
+    { id: 4, image: "1/mesh4.webp", alt: "Slide 4" },
+    { id: 5, image: "1/mesh5.webp", alt: "Slide 5" },
   ];
 
   const sliderSettings11 = {

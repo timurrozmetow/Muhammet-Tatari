@@ -84,7 +84,6 @@
   justify-content: center;
   border-radius: 50%;
   background-color: #03183f;
-  /* border: 1px solid #bdc3c7; */
   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 

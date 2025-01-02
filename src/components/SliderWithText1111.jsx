@@ -14,9 +14,9 @@ const SliderWithText1111 = () => {
   const [textRef, setTextRef] = useState(null);
 
   const slides = [
-    { id: 1, image: "1/t1.jpg", alt: "Slide 1" },
-    { id: 2, image: "1/t2.jpg", alt: "Slide 2" },
-    { id: 3, image: "1/t3.jpg", alt: "Slide 3" },
+    { id: 1, image: "1/t1.webp", alt: "Slide 1" },
+    { id: 2, image: "1/t2.webp", alt: "Slide 2" },
+    { id: 3, image: "1/t3.webp", alt: "Slide 3" },
   ];
 
   const sliderSettings11 = {

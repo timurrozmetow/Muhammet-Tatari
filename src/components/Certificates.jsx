@@ -10,11 +10,11 @@ const Certificates = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   const certificates = [
-    { id: 1, title: "Certificate 1", image: "cert/cert (1).jpg" },
-    { id: 2, title: "Certificate 2", image: "cert/cert (2).jpg" },
-    { id: 3, title: "Certificate 3", image: "cert/cert (3).jpg" },
-    { id: 4, title: "Certificate 4", image: "cert/cert (4).jpg" },
-    { id: 5, title: "Certificate 5", image: "cert/cert (5).jpg" },
+    { id: 1, title: "Certificate 1", image: "cert/1.webp" },
+    { id: 2, title: "Certificate 2", image: "cert/2.webp" },
+    { id: 3, title: "Certificate 3", image: "cert/3.webp" },
+    { id: 4, title: "Certificate 4", image: "cert/4.webp" },
+    { id: 5, title: "Certificate 5", image: "cert/5.webp" },
   ];
 
   const settings = {

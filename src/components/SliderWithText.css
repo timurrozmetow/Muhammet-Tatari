@@ -98,8 +98,6 @@
 .more-button:hover {
   background-color: #0241a8;
 }
-
-/* Responsive Design */
 @media (max-width: 1024px) {
   .slider-with-text-container {
     flex-direction: column;
