@@ -3,6 +3,14 @@
   color: #fff;
   padding: 3% 2%;
 }
+.icons{
+  display: flex;
+  align-items: center;
+}
+.whatsapp{
+  width: 25px;
+  margin: 0 1%;
+}
 
 .footer-container {
   display: flex;
@@ -138,6 +146,9 @@
   }
   .footer-contact, .footer-social{
     flex: 1 1 80px;
+  }
+  .icons{
+  justify-content: center;
   }
 }
 
